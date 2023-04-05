@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Instagram Practice Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscripts.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i><span class="navbar-brand mb-0 h1 ms-2">Instagram</span>
+            <!-- Button trigger modal -->
+            <button id="button" type="button" class="btn btn-primary ms-auto me-3" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Create New Post
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">New Post</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Type photo description here.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Dropdown-->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Account</a></li>
+                    <li><a class="dropdown-item" href="#">Messages</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="nav nav-tabs justify-content-center" id="grid" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-th"
+                    aria-hidden="true"></i></button>
+        </li>
+        <li class="nav-item" id="square" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-square-o"
+                    aria-hidden="true"></i></button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+            <b-container>
+                <b-row>
+                    <b-col><img class="photo1"
+                            src="https://media.istockphoto.com/id/1449307455/photo/fingerprint-authentication-button-biometric-security.jpg?s=1024x1024&w=is&k=20&c=7COguRLJL1O8OUj3QDcYZljMctPGPviuK1gWAcTCLMM="></b-col>
+                    <b-col><img class="photo2"
+                            src="https://media.istockphoto.com/id/1458444203/photo/aerial-view-of-abstract-natural-patterns-on-a-lake.jpg?s=1024x1024&w=is&k=20&c=tOcX1bojFpCXYRmSwSLjAwCOVEzy5fcuVkrRKx4wsTg="></b-col>
+                    <b-col><img class="photo3"
+                            src="https://media.istockphoto.com/id/1289937778/photo/man-stands-in-front-of-a-big-maze-ready-to-take-on-the-challenge.jpg?s=1024x1024&w=is&k=20&c=4rmQZUSdO8n03EgD0pYeiGJl5tbOV_4EQnwnjciln8c="></b-col>
+                    <div class="w-100"></div>
+                    <b-col><img class="photo4"
+                            src="https://media.istockphoto.com/id/1371943789/photo/iceland-from-above.jpg?s=1024x1024&w=is&k=20&c=0HBDb61Jh4MNei2pRtczEK4vSldWSUkgZRouNo5R2cs="></b-col>
+                    <b-col><img class="photo5"
+                            src="https://media.istockphoto.com/id/1427473404/photo/closeup-top-view-of-rocks-and-water-at-blue-lagoon-iceland.jpg?s=1024x1024&w=is&k=20&c=t_anlyNTZn6kBRH_ovLwcgnKrDCNXN27omCIIwDRHMQ="></b-col>
+                    <b-col><img class="photo6"
+                            src="https://media.istockphoto.com/id/1360535828/photo/drone-point-view-of-overpass-and-city-traffic-at-night.jpg?s=1024x1024&w=is&k=20&c=4TFUBp0r25CqwFZZpA1PoTBX9QFX-oobjH0lTClPb2o="></b-col>
+                </b-row>
+            </b-container>
+        </div>
+        
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div id="post">
+                <div class="header">
+                    <h4>Cool Thumbprints</h4>
+                    <p>04/01/2023</p>
+                </div>
+                <img
+                    src="https://media.istockphoto.com/id/1449307455/photo/fingerprint-authentication-button-biometric-security.jpg?s=1024x1024&w=is&k=20&c=7COguRLJL1O8OUj3QDcYZljMctPGPviuK1gWAcTCLMM=">
+                <h6><strong>345 Likes</strong></h6>
+                <p>I have no idea what exactly this picture is, but it looks super cool and the colors are awesome.</p>
+            </div>
+
+            <div id="post">
+                <div class="header">
+                    <h4>Magic Mushroom Mold Vein</h4>
+                    <p>04/02/2023</p>
+                </div>
+                <img
+                    src="https://media.istockphoto.com/id/1458444203/photo/aerial-view-of-abstract-natural-patterns-on-a-lake.jpg?s=1024x1024&w=is&k=20&c=tOcX1bojFpCXYRmSwSLjAwCOVEzy5fcuVkrRKx4wsTg=">
+                <h6><strong>4534 Likes</strong></h6>
+                <p>I really have no idea what this is. I actually didn't think about it until I was trying to name it.
+                </p>
+            </div>
+            <div id="post">
+                <div class="header">
+                    <h4>Scary Nightmare Maze</h4>
+                    <p>04/03/2023</p>
+                </div>
+                <img
+                    src="https://media.istockphoto.com/id/1289937778/photo/man-stands-in-front-of-a-big-maze-ready-to-take-on-the-challenge.jpg?s=1024x1024&w=is&k=20&c=4rmQZUSdO8n03EgD0pYeiGJl5tbOV_4EQnwnjciln8c=">
+                <h6><strong>2934 Likes</strong></h6>
+                <p>Looking at this photo makes me really wonder where in the world a maze like this could be found.</p>
+            </div>
+            <div id="post">
+                <div class="header">
+                    <h4>Glitter Volcano Twist-Tie</h4>
+                    <p>04/04/2023</p>
+                </div>
+                <img
+                    src="https://media.istockphoto.com/id/1371943789/photo/iceland-from-above.jpg?s=1024x1024&w=is&k=20&c=0HBDb61Jh4MNei2pRtczEK4vSldWSUkgZRouNo5R2cs=">
+                <h6><strong>239 Likes</strong></h6>
+                <p>I really didn't think much about what these pictures were when I picked them out. Literally, what the
+                    heck is this?</p>
+            </div>
+            <div id="post">
+                <div class="header">
+                    <h4>Beautiful Frozen Water Place</h4>
+                    <p>04/05/2023</p>
+                </div>
+                <img
+                    src="https://media.istockphoto.com/id/1427473404/photo/closeup-top-view-of-rocks-and-water-at-blue-lagoon-iceland.jpg?s=1024x1024&w=is&k=20&c=t_anlyNTZn6kBRH_ovLwcgnKrDCNXN27omCIIwDRHMQ=">
+                <h6><strong>607 Likes</strong></h6>
+                <p>This place must be incredible to see in person. Maybe it is CGI. I really can't tell, though I feel
+                    like that's a general issue these days with reality and other.</p>
+            </div>
+            <div id="post">
+                <div class="header">
+                    <h4>Pilot-Designed Highway</h4>
+                    <p>04/06/2023</p>
+                </div>
+                <img
+                    src="https://media.istockphoto.com/id/1360535828/photo/drone-point-view-of-overpass-and-city-traffic-at-night.jpg?s=1024x1024&w=is&k=20&c=4TFUBp0r25CqwFZZpA1PoTBX9QFX-oobjH0lTClPb2o=">
+                <h6><strong>903 Likes</strong></h6>
+                <p>This photo makes me really impressed of whoever designed this thing. There are so many things I will
+                    never even begin to know how to do.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
